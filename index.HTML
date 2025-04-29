@@ -1,15 +1,238 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page</title>
+    <title>Paloma Arquitetura - Design que transforma espaços</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Playfair+Display:wght@400;600&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <h1> teste </h1>
+    <!-- Botão de Toggle para Dark Mode -->
+    <button id="theme-toggle" class="theme-toggle">
+        <i class="fas fa-moon"></i>
+    </button>
 
+    <!-- Header -->
+    <header>
+        <div class="container header-content">
+            <div class="logo">Paloma <span>Arquitetura</span></div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Início</a></li>
+                    <li><a href="#about">Sobre</a></li>
+                    <li><a href="#services">Serviços</a></li>
+                    <li><a href="#portfolio">Portfólio</a></li>
+                    <li><a href="#contact">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Transformando sonhos em espaços reais</h1>
+                <p>Design arquitetônico personalizado que reflete sua personalidade e estilo de vida. Cada projeto é uma obra de arte funcional.</p>
+                <a href="#contact" class="btn">Agende uma consulta</a>
+            </div>
+        </div>
+    </section>
 
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="section-title">
+                <h2>Sobre Paloma</h2>
+            </div>
+            <div class="about-content">
+                <div class="about-img">
+                    <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" alt="Paloma Arquiteta">
+                </div>
+                <div class="about-text">
+                    <h3>Arquiteta com paixão por criar espaços que inspiram</h3>
+                    <p>Formada pela Universidade Federal de Arquitetura com mais de 10 anos de experiência no mercado, Paloma combina funcionalidade, estética e inovação em cada projeto.</p>
+                    <p>Meu objetivo é entender profundamente as necessidades dos meus clientes para criar ambientes que não apenas impressionam visualmente, mas também melhoram a qualidade de vida de quem os habita.</p>
+                    <p>Acredito que a arquitetura deve ser acessível, sustentável e, acima de tudo, um reflexo autêntico de quem você é.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-title">
+                <h2>Nossos Serviços</h2>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-img">
+                        <img src="https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" alt="Projeto Residencial">
+                    </div>
+                    <div class="service-content">
+                        <h3>Projetos Residenciais</h3>
+                        <p>Desde reformas até construções do zero, criamos lares que combinam conforto, beleza e funcionalidade.</p>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-img">
+                        <img src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Projeto Comercial">
+                    </div>
+                    <div class="service-content">
+                        <h3>Projetos Comerciais</h3>
+                        <p>Espaços comerciais que impressionam clientes e aumentam a produtividade da sua equipe.</p>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-img">
+                        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Interiores">
+                    </div>
+                    <div class="service-content">
+                        <h3>Design de Interiores</h3>
+                        <p>Seleção de materiais, mobiliário e iluminação para criar ambientes harmoniosos e personalizados.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="portfolio" id="portfolio">
+        <div class="container">
+            <div class="section-title">
+                <h2>Portfólio</h2>
+            </div>
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <img src="https://images.unsplash.com/photo-1600121848594-d8644e57abab?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Projeto 1">
+                    <div class="portfolio-overlay">
+                        <h3>Casa Moderna</h3>
+                        <p>São Paulo - 2022</p>
+                        <a href="#" class="btn">Ver detalhes</a>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <img src="https://images.unsplash.com/photo-1600566752355-35792bedcfea?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Projeto 2">
+                    <div class="portfolio-overlay">
+                        <h3>Loja Conceito</h3>
+                        <p>Rio de Janeiro - 2021</p>
+                        <a href="#" class="btn">Ver detalhes</a>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <img src="https://images.unsplash.com/photo-1600210492493-0946911123ea?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Projeto 3">
+                    <div class="portfolio-overlay">
+                        <h3>Apartamento Minimalista</h3>
+                        <p>Belo Horizonte - 2023</p>
+                        <a href="#" class="btn">Ver detalhes</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-title">
+                <h2>Entre em Contato</h2>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Vamos transformar seu espaço juntos</h3>
+                    <p>Estou disponível para novos projetos e consultorias. Entre em contato para agendarmos uma conversa e discutirmos suas ideias.</p>
+                    <div class="contact-details">
+                        <div>
+                            <i class="fas fa-envelope"></i>
+                            <span>contato@palomaarquitetura.com</span>
+                        </div>
+                        <div>
+                            <i class="fas fa-phone-alt"></i>
+                            <span>(11) 98765-4321</span>
+                        </div>
+                        <div>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Av. Paulista, 1000 - São Paulo/SP</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Nome</label>
+                            <input type="text" id="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">E-mail</label>
+                            <input type="email" id="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Telefone</label>
+                            <input type="tel" id="phone">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Mensagem</label>
+                            <textarea id="message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn">Enviar Mensagem</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="logo">Paloma <span>Arquitetura</span></div>
+                <p>Design que transforma espaços e vidas</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-pinterest"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-behance"></i></a>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 Paloma Arquitetura. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Dark Mode Toggle
+        const themeToggle = document.getElementById('theme-toggle');
+        const icon = themeToggle.querySelector('i');
+        
+        // Verifica o tema salvo no localStorage
+        const currentTheme = localStorage.getItem('theme');
+        if (currentTheme === 'dark') {
+            document.body.classList.add('dark-theme');
+            icon.classList.replace('fa-moon', 'fa-sun');
+        }
+        
+        themeToggle.addEventListener('click', () => {
+            document.body.classList.toggle('dark-theme');
+            
+            if (document.body.classList.contains('dark-theme')) {
+                icon.classList.replace('fa-moon', 'fa-sun');
+                localStorage.setItem('theme', 'dark');
+            } else {
+                icon.classList.replace('fa-sun', 'fa-moon');
+                localStorage.setItem('theme', 'light');
+            }
+        });
+        
+        // Form submission
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Mensagem enviada com sucesso! Entraremos em contato em breve.');
+            this.reset();
+        });
+    </script>
 </body>
 </html>
