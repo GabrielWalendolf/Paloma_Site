@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARQZUUM | Acesso</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body class="auth-page">
+    <!-- Botão de Toggle para Dark Mode -->
+    <button id="theme-toggle" class="theme-toggle">
+        <i class="fas fa-moon"></i>
+    </button>
+    <div class="auth-container">
+        <div class="auth-header">
+            <h1>ARQZUUM</h1>
+            <p>Arquitetura, Urbanismo & Design de Interiores</p>
+        </div>
+
+        <div class="auth-tabs">
+            <button class="tab-btn active" id="login-tab">Login</button>
+            <button class="tab-btn" id="signup-tab">Cadastro</button>
+        </div>
+
+        <!-- Formulário de Login -->
+        <form id="login-form" class="auth-form active">
+            <div class="form-group">
+                <label for="login-email">E-mail</label>
+                <input type="email" id="login-email" required>
+            </div>
+            <div class="form-group">
+                <label for="login-password">Senha</label>
+                <input type="password" id="login-password" required>
+                <a href="#" class="forgot-password">Esqueceu sua senha?</a>
+            </div>
+            <button type="submit" class="btn auth-btn">Entrar</button>
+            <div class="social-login">
+                <p>Ou entre com</p>
+                <div class="social-icons">
+                    <a href="#" class="social-icon"><i class="fab fa-google"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </form>
+
+        <!-- Formulário de Cadastro -->
+        <form id="signup-form" class="auth-form">
+            <div class="form-group">
+                <label for="signup-name">Nome Completo</label>
+                <input type="text" id="signup-name" required>
+            </div>
+            <div class="form-group">
+                <label for="signup-email">E-mail</label>
+                <input type="email" id="signup-email" required>
+            </div>
+            <div class="form-group">
+                <label for="signup-password">Senha</label>
+                <input type="password" id="signup-password" required>
+            </div>
+            <div class="form-group">
+                <label for="signup-confirm">Confirme sua Senha</label>
+                <input type="password" id="signup-confirm" required>
+            </div>
+            <div class="form-group checkbox-group">
+                <input type="checkbox" id="terms-agree" required>
+                <label for="terms-agree">Concordo com os <a href="#">Termos de Serviço</a> e <a href="#">Política de Privacidade</a></label>
+            </div>
+            <button type="submit" class="btn auth-btn">Criar Conta</button>
+        </form>
+
+        <div class="auth-footer">
+            <p>Já tem uma conta? <a href="#" id="switch-to-login">Faça login</a></p>
+        </div>
+    </div>
+
+    <script src="auth.js"></script>
+</body>
+</html>
